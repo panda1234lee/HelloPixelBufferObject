@@ -1,0 +1,13 @@
+﻿  HelloPBO.cpp
+HelloPBO.cpp(249): warning C4305: “参数”: 从“double”到“GLfloat”截断
+HelloPBO.cpp(251): warning C4305: “参数”: 从“double”到“GLfloat”截断
+HelloPBO.cpp(258): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+HelloPBO.cpp(280): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  正在生成代码
+  3 of 144 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  HelloPBO.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\HelloPBO\Release\HelloPBO.exe
+  HelloPBO.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\HelloPBO\Release\HelloPBO.pdb (Full PDB)

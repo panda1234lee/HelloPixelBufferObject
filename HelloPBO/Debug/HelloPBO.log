@@ -1,0 +1,10 @@
+﻿  HelloPBO.cpp
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(249): warning C4305: “参数”: 从“double”到“GLfloat”截断
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(251): warning C4305: “参数”: 从“double”到“GLfloat”截断
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(269): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(271): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(261): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+d:\projects\visual studio 2015\gl_test\hellopbo\hellopbo\hellopbo.cpp(291): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  HelloPBO.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\HelloPBO\Debug\HelloPBO.exe
+  HelloPBO.vcxproj -> D:\Projects\Visual Studio 2015\GL_Test\HelloPBO\Debug\HelloPBO.pdb (Full PDB)
