@@ -162,14 +162,25 @@ GLuint loadGLTexture(const char *file_path)
 void init(void)
 {
     // ------------------------------------
+	clock_t start = clock();
     // 比较耗时
     GLenum err = glewInit();
-    if (GLEW_OK != err)
-    {
-        /* Problem: glewInit failed, something is seriously wrong. */
-        fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
-    }
-    fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+    //if (GLEW_OK != err)
+    //{
+    //    /* Problem: glewInit failed, something is seriously wrong. */
+    //    fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
+    //}
+    //fprintf(stdout, "Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+	if (glewIsSupported("GL_VERSION_2_0"))
+		printf("Ready for OpenGL 2.0\n");
+	else
+	{
+		printf("OpenGL 2.0 not supported\n");
+		exit(1);
+	}
+	clock_t end = clock();
+	double sec = double(end - start) / CLOCKS_PER_SEC;
+	printf("glewInit: %fs\n", sec);
     // ------------------------------------
 
     glClearColor(0.0, 0.0, 0.0, 0.0);
@@ -367,10 +378,10 @@ int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     // 单缓冲
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB/* | GLUT_DEPTH*/);
     glutInitWindowSize(WIN_W, WIN_H);
     glutInitWindowPosition(WIN_X, WIN_Y);
-    glutCreateWindow(argv[0]);
+    glutCreateWindow("HelloPBO");
 
     init();
 
